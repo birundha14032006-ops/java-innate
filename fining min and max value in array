@@ -1,0 +1,24 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        // Fix: Declared and initialized the missing arr3 array
+        int[] arr3 = {12, 5, 45, 1, 9, 23}; 
+
+        int largest1 = arr3[0];
+        int smallest1 = arr3[0];
+
+        for (int i = 1; i < arr3.length; i++) {
+            if (arr3[i] > largest1) {
+                largest1 = arr3[i];
+            }
+            if (arr3[i] < smallest1) {
+                smallest1 = arr3[i];
+            }
+        }
+
+        System.out.println("First Largest Number: " + largest1);
+        System.out.println("First Smallest Number: " + smallest1);
+    }
+}
